@@ -173,6 +173,35 @@ using namespace std;
 				ofstream myfile;
 				myfile.open("table.csv");
 
+
+				//Идентификатор пользователя,"Название приюта","Дата/время платежа","Наименование услуги","Сумма платежа"
+				for (size_t i = 0; i < table.size(); i++) {
+					if (table[i] == "id") {
+						str += "Идентификатор пользователя";
+					    str += ',';
+					}
+					else if (table[i] == "name_house") {
+						str += "Название приюта";
+						str += ',';
+					}
+					else if (table[i] == "purchase_date") {
+						str += "Дата/время платежа";
+						str += ',';
+					}
+					else if (table[i] == "purchase_date") {
+						str += "Наименование услуги";
+						str += ',';
+					}
+					else if (table[i] == "name_price") {
+						str += "Сумма платежа";
+						str += ',';
+					}
+				}
+
+				str[str.length() - 1] = '\n';
+				myfile << str;
+				str.clear();
+
 				for (size_t f = 0; f < forCsv.size(); f++) {
 					for (size_t i = 0; i < table.size(); i++) {
 						if (table[i] == "id") {
@@ -216,7 +245,7 @@ using namespace std;
 							str += ',';
 						}
 					}
-					str.push_back('\n');
+					str[str.length()-1] = '\n';
 					myfile << str;
 					str.clear();
 				}
