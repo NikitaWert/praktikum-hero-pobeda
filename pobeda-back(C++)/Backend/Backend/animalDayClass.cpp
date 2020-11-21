@@ -188,11 +188,11 @@ using namespace std;
 						str += "Дата/время платежа";
 						str += ',';
 					}
-					else if (table[i] == "purchase_date") {
+					else if (table[i] == "name_price") {
 						str += "Наименование услуги";
 						str += ',';
 					}
-					else if (table[i] == "name_price") {
+					else if (table[i] == "price") {
 						str += "Сумма платежа";
 						str += ',';
 					}
