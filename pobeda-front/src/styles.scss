@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-sidenav .mat-drawer-inner-container {
+	overflow: hidden;
+}
+
+div:focus, li:focus, span:focus {
+	outline: none;
+}
+
+.title {
+	padding-left: 16px;
+}
+
+.chart-container {
+	height: calc(100% - 44px);
+	width: 100%;
+}

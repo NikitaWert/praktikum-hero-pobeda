@@ -1,0 +1,17 @@
+
+<h3 class="title">Распределение прибыли между приютами</h3>
+<div class="chart-container">
+	<ngx-charts-bar-vertical
+		[scheme]="colorScheme"
+		[results]="single | async"
+		[gradient]="gradient"
+		[xAxis]="showXAxis"
+		[yAxis]="showYAxis"
+		[legend]="showLegend"
+		[showXAxisLabel]="showXAxisLabel"
+		[showYAxisLabel]="showYAxisLabel"
+		[xAxisLabel]="xAxisLabel"
+		[yAxisLabel]="yAxisLabel"
+		(select)="onSelect($event)">
+	</ngx-charts-bar-vertical>
+</div>

@@ -1,0 +1,19 @@
+<h3 class="title">Распределение взносов между приютами</h3>
+<div class="chart-container">
+	<ngx-charts-pie-chart
+		scheme="forest"
+		[results]="single | async"
+		[gradient]="gradient"
+		[legend]="showLegend"
+		[labels]="showLabels"
+		[doughnut]="isDoughnut"
+		[tooltipText]="tooltipText"
+		(select)="onSelect($event)"
+		(activate)="onActivate($event)"
+		(deactivate)="onDeactivate($event)">
+	</ngx-charts-pie-chart>
+</div>
+
+<ng-template #to>
+	привет
+</ng-template>
