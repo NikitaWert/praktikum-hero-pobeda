@@ -1,0 +1,1 @@
+КотоДень,ПесоДень,КотоНеделя,ПесоНеделя,ПесоМесяц,КотоМесяц,id,name_house,purchase_date,name_price,price
